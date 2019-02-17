@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-const schema = mongoose.schema;
+const Schema = mongoose.Schema;
 
-const bookSchema = new schema({
+const bookSchema = new Schema({
   name: String,
   genre: String,
   authorID: String
