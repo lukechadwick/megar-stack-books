@@ -1,7 +1,7 @@
 const graphql = require('graphql');
-const _ = reqire('lodash');
+const _ = require('lodash');
 
-const { GraphQLObjectType, GraphQLString } = graphql;
+const { GraphQLObjectType, GraphQLString, GraphQLSchema } = graphql;
 
 let dummyData = [
   { name: 'Book 1', genre: 'Fantasy', id: '1' },
