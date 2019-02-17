@@ -12,7 +12,7 @@ const {
 
 //dummy data
 let books = [
-  { name: 'Book 1', genre: 'Fantasy', id: '1', authorId: '3' },
+  { name: 'Book 1', genre: 'Fantasy', id: '1', authorId: '1' },
   { name: 'Book 2', genre: 'Sci-Fi', id: '2', authorId: '1' },
   { name: 'Book 3', genre: 'Action', id: '3', authorId: '2' },
   { name: 'Book 4', genre: 'Fantasy', id: '4', authorId: '3' },
@@ -77,6 +77,12 @@ const RootQuery = new GraphQLObjectType({
       type: new GraphQLList(BookType),
       resolve(parent, args) {
         return books;
+      }
+    },
+    authors: {
+      type: new GraphQLList(AuthorType),
+      resolve(parent, args) {
+        return authors;
       }
     }
   }
