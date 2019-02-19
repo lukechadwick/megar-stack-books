@@ -32,7 +32,6 @@ class BookList extends Component {
     return (
       <React.Fragment>
         <ul id='book-list'>
-          {console.log(this.props)}
           {this.displayBooks()}
           <li>Book Name</li>
         </ul>
