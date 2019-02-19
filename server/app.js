@@ -5,6 +5,10 @@ const schema = require('./schema/schema');
 const mongoose = require('mongoose');
 const mongoKey = require('./keys');
 
+// allow cross origin requests
+const cors = require('cors');
+app.use(cors());
+
 mongoose.connect(mongoKey.mongoURI);
 mongoose.connection.once('open', () => {
   console.log('Connected to database');
