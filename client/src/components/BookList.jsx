@@ -7,6 +7,7 @@ class BookList extends Component {
     super(props);
     this.state = {};
   }
+
   displayBooks = () => {
     let data = this.props.data;
 
@@ -22,10 +23,7 @@ class BookList extends Component {
   render() {
     return (
       <React.Fragment>
-        <ul id='book-list'>
-          {this.displayBooks()}
-          <li>Book Name</li>
-        </ul>
+        <ul id='book-list'>{this.displayBooks()}</ul>
       </React.Fragment>
     );
   }
