@@ -25,15 +25,14 @@ class BookDetails extends Component {
         </div>
       );
     } else {
-      return <div>Select a book</div>;
+      return <div>Select a book...</div>;
     }
   }
 
   render() {
     return (
       <React.Fragment>
-        <div id='book-details'>Show book details</div>
-        {this.displayBookDetails()}
+        <div id='book-details'>{this.displayBookDetails()}</div>
       </React.Fragment>
     );
   }
