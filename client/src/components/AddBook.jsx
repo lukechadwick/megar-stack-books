@@ -50,6 +50,7 @@ class AddBook extends Component {
     return (
       <React.Fragment>
         <form id='add-book' onSubmit={this.onSubmit}>
+          <h2 style={{ textAlign: 'center' }}>Add Book:</h2>
           <div className='field'>
             <label>Book name:</label>
             <input type='text' name='name' onChange={this.onChange} />
